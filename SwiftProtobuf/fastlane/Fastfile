@@ -1,0 +1,7 @@
+
+platform :ios do
+    desc "Building static .framework"
+    lane :create_framework do
+        build_framework(output_folder: "Build")
+  end
+end
