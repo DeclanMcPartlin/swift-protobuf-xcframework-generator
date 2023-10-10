@@ -1,6 +1,6 @@
 
 platform :ios do
-    desc "Building static .framework"
+    desc "Building static .xcframework"
     lane :create_framework do
         build_framework(output_folder: "Build")
   end
