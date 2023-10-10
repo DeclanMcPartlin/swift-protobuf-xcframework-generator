@@ -20,32 +20,7 @@ targets:
       DEFINES_MODULE: YES
       CLANG_ENABLE_MODULES: YES
       GENERATE_MASTER_OBJECT_FILE: YES
-    templates: [CommonTemplate, FrameworkTemplate]
-    # templateAttributes:
-    #   test_target: ''
-
-
-targetTemplates:
-  CommonTemplate:
     platform: iOS       
     PRODUCT_BUNDLE_IDENTIFIER: ${bundleIdPrefix}$.{target_name}
-    
-  # FrameworkPaths:
-  #   settings:
-  #     HEADER_SEARCH_PATHS: 
-  #       - $(inherited)
-  #       - $(SRCROOT)/Public/SourceCode/Public/**
-  #     FRAMEWORK_SEARCH_PATHS: 
-  #       - $(SRCROOT)/build/**
-  #       - $(inherited)
-
-  FrameworkTemplate:
     scheme:
       - name: ${target_name}
-      # - testTargets: 
-      #   - ${test_target} 
-
-
-
-    # settings: 
-    #   SWIFT_OBJC_BRIDGING_HEADER: "Public/Tests/UnityAdsTests-Bridging-Header.h"
